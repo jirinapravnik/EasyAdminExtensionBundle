@@ -12,5 +12,10 @@
             <!-- Makes it process just before PropertyConfigPass -->
             <tag name="easyadmin.config_pass" priority="41"/>
         </service>
+        <service id="alterphp.easyadmin_extension.config_pass.template" class="AlterPHP\EasyAdminExtensionBundle\Configuration\TemplateConfigPass">
+            <argument type="service" id="twig.loader.filesystem" />
+            <!-- Makes it process just after EasyAdmin TemplateConfigPass -->
+            <tag name="easyadmin.config_pass" priority="21"/>
+        </service>
     </services>
 </container>

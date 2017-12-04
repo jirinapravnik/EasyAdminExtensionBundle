@@ -1,1 +1,3 @@
-{{ render(path('easyadmin', { entity: entity, action: 'embeddedList', filters: filters })) }}
+{% set filters = field_options.template_options.filters|default({})|merge({(field_options.template_options.association_alias): item.id }) %}
+
+{{ render(path('easyadmin', { entity: field_options.template_options.entity, action: 'embeddedList', filters: filters })) }}

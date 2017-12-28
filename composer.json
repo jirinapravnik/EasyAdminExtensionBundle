@@ -18,7 +18,7 @@
         "doctrine/doctrine-bundle"      : "~1.2",
         "doctrine/orm"                  : "~2.3",
         "pagerfanta/pagerfanta"         : "~1.0,>=1.0.1",
-        "sensio/framework-extra-bundle" : "~2.8,>=3.0.2",
+        "sensio/framework-extra-bundle" : "~3.0,>=3.0.2",
         "symfony/asset"                 : "~2.8",
         "symfony/config"                : "~2.8",
         "symfony/dependency-injection"  : "~2.8",
